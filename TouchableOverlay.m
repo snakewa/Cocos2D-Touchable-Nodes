@@ -72,9 +72,9 @@
     touchPoint = [[CCDirector sharedDirector] convertToGL:touchPoint];
     
     NSLog(@"began: %@", NSStringFromCGPoint(touchPoint));
-    return kEventHandled;
+    return YES;
   } else {
-    return kEventIgnored;
+    return NO;
   }
 }
 
